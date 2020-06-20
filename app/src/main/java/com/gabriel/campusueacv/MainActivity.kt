@@ -24,9 +24,7 @@ class MainActivity : AppCompatActivity() {
             "Av. Djalma Batista, 3578. Flores, Manaus - AM",
             "(92) 3214-5778",
             R.drawable.ic_location_city_24px,
-            -3.083805,
-            -60.023919
-
+            -3.083794, -60.023244
         ),
         Campus(
             "ENS - Escola Normal Superior",
@@ -34,8 +32,7 @@ class MainActivity : AppCompatActivity() {
             "Avenida Djalma Batista, nº 2.470, Chapada, Manaus - AM",
             "(92) 3878-7721",
             R.drawable.ic_history_edu_24px,
-            -3.092453,
-            -60.023101
+            -3.092573, -60.023445
         ),
         Campus(
             "ESAT - Escola Superior de Artes e Turismo",
@@ -43,8 +40,7 @@ class MainActivity : AppCompatActivity() {
             "Rua Leonardo Malcher, nº 1.728, Praça 14 de Janeiro, Manaus - AM",
             "(92) 3878-4415",
             R.drawable.ic_brush_24px,
-            -3.125968,
-            -60.016356
+            -3.126263, -60.016404
         ),
         Campus(
             "ESCS - Escola Superior de Ciências e Saúde",
@@ -52,8 +48,7 @@ class MainActivity : AppCompatActivity() {
             "Avenida Carvalho Leal, nº 1.777, Cachoeirinha, Manaus - AM",
             "(92) 3878-4380",
             R.drawable.ic_science_24px,
-            -3.119196,
-            -60.005978
+            -3.119131, -60.006225
         ),
         Campus(
             "ESCS - Escola Superior de Ciências Sociais",
@@ -61,8 +56,7 @@ class MainActivity : AppCompatActivity() {
             "Avenida Castelo Branco, nº 504, Cachoeirinha, Manaus - AM",
             "(92) 3878-7801",
             R.drawable.ic_gavel_24px,
-            -3.125615,
-            -60.022110
+            -3.125465, -60.022131
         ),
         Campus(
             "EST - Escola Superior de Tecnologia",
@@ -70,8 +64,7 @@ class MainActivity : AppCompatActivity() {
             "Avenida Darcy Vargas, nº 1.200, Parque 10 de Novembro, Manaus - AM",
             "(92) 3878-4308",
             R.drawable.engineering_24px,
-            -3.091644,
-            -60.017688
+            -3.091492, -60.017645
         ),
         Campus(
             "CESIT - Centro de Estudos Superiores de Itacoatiara",
@@ -79,8 +72,7 @@ class MainActivity : AppCompatActivity() {
             "Rua Mário Andreazza, s/nº, São Francisco, Itacoatiara - AM",
             "(92) 3521-4293",
             R.drawable.ic_school_24px,
-            -3.125339,
-            -58.431307
+            -3.125575, -58.431404
         )
     )
 

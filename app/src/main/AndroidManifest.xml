@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="$googleApiKey"/>
+            android:value="AIzaSyCujdIWTFz__KHfTJSRUfFkL4QcMXXDbv0"/>
         <activity android:name=".infoUniversidades"
             android:label="@string/campus_detail_title"
             android:parentActivityName=".MainActivity"/>

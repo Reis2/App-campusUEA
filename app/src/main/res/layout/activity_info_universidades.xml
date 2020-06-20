@@ -59,13 +59,13 @@
             android:id="@+id/tvAdress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="125dp"
+            android:layout_marginTop="60dp"
             android:text="@string/address"
             android:textSize="14sp"
             android:textColor="#333333"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/tvCidade"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/tvName"/>
 
         <TextView
             android:id="@+id/tvAdressInput"

@@ -32,7 +32,7 @@ class infoUniversidades : AppCompatActivity() {
                 it.addMarker(marker)
 
                 it.moveCamera(CameraUpdateFactory.newLatLng(latLng))
-                it.moveCamera(CameraUpdateFactory.zoomTo(15f))
+                it.moveCamera(CameraUpdateFactory.zoomTo(18f))
             }
         }
     }
