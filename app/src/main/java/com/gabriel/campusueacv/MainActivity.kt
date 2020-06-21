@@ -4,6 +4,8 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.style.UnderlineSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,55 +26,63 @@ class MainActivity : AppCompatActivity() {
             "Av. Djalma Batista, 3578. Flores, Manaus - AM",
             "(92) 3214-5778",
             R.drawable.ic_location_city_24px,
-            -3.083794, -60.023244
+            -3.083805,
+            -60.023919
+
         ),
         Campus(
-            "ENS - Escola Normal Superior",
+            "ENS - Escola Normal\nSuperior",
             "Manaus",
             "Avenida Djalma Batista, nº 2.470, Chapada, Manaus - AM",
             "(92) 3878-7721",
             R.drawable.ic_history_edu_24px,
-            -3.092573, -60.023445
+            -3.092453,
+            -60.023101
         ),
         Campus(
-            "ESAT - Escola Superior de Artes e Turismo",
+            "ESAT - Escola Superior\nde Artes e Turismo",
             "Manaus",
             "Rua Leonardo Malcher, nº 1.728, Praça 14 de Janeiro, Manaus - AM",
             "(92) 3878-4415",
             R.drawable.ic_brush_24px,
-            -3.126263, -60.016404
+            -3.125968,
+            -60.016356
         ),
         Campus(
-            "ESCS - Escola Superior de Ciências e Saúde",
+            "ESCS - Escola Superior\nde Ciências e Saúde",
             "Manaus",
             "Avenida Carvalho Leal, nº 1.777, Cachoeirinha, Manaus - AM",
             "(92) 3878-4380",
             R.drawable.ic_science_24px,
-            -3.119131, -60.006225
+            -3.119196,
+            -60.005978
         ),
         Campus(
-            "ESCS - Escola Superior de Ciências Sociais",
+            "ESCS - Escola Superior\nde Ciências Sociais",
             "Manaus",
             "Avenida Castelo Branco, nº 504, Cachoeirinha, Manaus - AM",
             "(92) 3878-7801",
             R.drawable.ic_gavel_24px,
-            -3.125465, -60.022131
+            -3.125615,
+            -60.022110
         ),
         Campus(
-            "EST - Escola Superior de Tecnologia",
+            "EST - Escola Superior\nde Tecnologia",
             "Manaus",
             "Avenida Darcy Vargas, nº 1.200, Parque 10 de Novembro, Manaus - AM",
             "(92) 3878-4308",
             R.drawable.engineering_24px,
-            -3.091492, -60.017645
+            -3.091644,
+            -60.017688
         ),
         Campus(
-            "CESIT - Centro de Estudos Superiores de Itacoatiara",
+            "CESIT - Centro de Estudos\nSuperiores de Itacoatiara",
             "Itacoatiara",
             "Rua Mário Andreazza, s/nº, São Francisco, Itacoatiara - AM",
             "(92) 3521-4293",
             R.drawable.ic_school_24px,
-            -3.125575, -58.431404
+            -3.125339,
+            -58.431307
         )
     )
 
@@ -130,9 +140,13 @@ class MainActivity : AppCompatActivity() {
 
 
         val stringPlusNome = editView.text.toString()
+        name = "Bem vindo ${stringPlusNome}"
 
-        text_nome.text = stringPlusNome
-        name = text_nome.text.toString()
+
+        val contentToUnderline = SpannableString(name)
+        contentToUnderline.setSpan(UnderlineSpan(),0,name.length,0)
+
+        text_nome.text = contentToUnderline
         latcher = true
 
         editView.visibility = View.GONE
@@ -161,10 +175,16 @@ class MainActivity : AppCompatActivity() {
 
     fun setVisibility(){
 
-        text_nome.text = name
+        val contentToUnderline = SpannableString(name)
+        contentToUnderline.setSpan(UnderlineSpan(),0,name.length,0)
+
+        text_nome.text = contentToUnderline
         editView.visibility = View.GONE
         done_button.visibility = View.GONE
         text_nome.visibility = View.VISIBLE
     }
 
 }
+
+
+//gabriel
